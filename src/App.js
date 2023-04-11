@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import SliderSelect from "./components/SliderSelect";
 import { useState } from "react";
 import TenureSelect from "./components/TenureSelect";
+import Result from "./components/Result";
+
 
 
 function App() {
@@ -27,9 +29,9 @@ function App() {
             <SliderSelect data={data} setData={setData} />
             <TenureSelect data={data} setData={setData}/>
           </Grid>
-          {/* <Grid item xs={6} md={6} sm={12} >
-              hello world
-          </Grid> */}
+          <Grid item xs={6} md={6} sm={12} >
+            <Result data={data}/>
+          </Grid>
         </Grid>
       </Container>
     </div>
